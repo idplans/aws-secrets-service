@@ -5,7 +5,11 @@ const aws = require('aws-sdk');
  * local environment for development. Uses aws roles in production.
  * 
  * @example
- *  let awsSecretsObject = secretsManager({endpoint:'https://secrets.com', region: 'us-east-1', 'prod'});
+ *  let awsSecretsObject = secretsService({
+ *                          endpoint:'https://secrets.com', 
+ *                          region: 'us-east-1', 
+ *                          secretId: 'prod'
+ *                         });
  *  // returns {SECRET_KEY=>'value', SECRET_KEY2=>'value'}
  * @param {Object} opts configuration object
  * @return {Promise} resolves to Object
