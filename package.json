@@ -5,17 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch",
-    "prepublish": "npm install"
+    "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bundledDependencies": [
-    "aws-sdk"
-  ],
   "dependencies": {
-    "aws-sdk": "^2.0.23"
+    "aws-sdk": "^2.231.1"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
