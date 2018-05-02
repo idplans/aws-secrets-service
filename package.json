@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepublish": "npm install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bundledDependencies": [
+    "aws-sdk"
+  ],
   "dependencies": {
     "aws-sdk": "^2.0.23"
   },
